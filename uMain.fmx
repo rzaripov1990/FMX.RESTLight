@@ -1,0 +1,70 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'RESTLight'
+  ClientHeight = 312
+  ClientWidth = 558
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object btnAuth: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Auth'
+    OnClick = btnAuthClick
+  end
+  object btnWallMsg: TButton
+    Enabled = False
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Wall Msg'
+    OnClick = btnWallMsgClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 136.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 297.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 413.000000000000000000
+    Viewport.Height = 293.000000000000000000
+  end
+  object btnAccOffline: TButton
+    Enabled = False
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Account Offline'
+    OnClick = btnAccOfflineClick
+  end
+  object btnWallPicture: TButton
+    Enabled = False
+    Position.X = 8.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Wall Picture'
+    OnClick = btnWallPictureClick
+  end
+end
